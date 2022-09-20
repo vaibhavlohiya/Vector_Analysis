@@ -37,7 +37,7 @@ Matrix Cross_Product(std::array<Matrix, 2>& element)
 int main()
 {
     // Making an array of the struct Matrix
-    std::array<Matrix, 3> element;
+    std::array<Matrix, 2> element;
 
     std::cout << "Enter the values of vector 1 and 2 respectively: " << std::endl;
     for (Matrix& e : element)
