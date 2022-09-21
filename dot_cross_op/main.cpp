@@ -25,7 +25,7 @@ std::istream& operator>>(std::istream& stream, std::vector<Matrix>& vec)
 {
     Matrix element;
     stream >> element.X >> element.Y >> element.Z;
-    vec.push_back({element.X, element.Y, element.Z});
+    vec.push_back(element);
 
     return stream;
 }
@@ -43,7 +43,7 @@ std::ostream& operator<<(std::ostream& stream, const Matrix& element)
 
 Matrix Cross_Product(Matrix& element0, Matrix& element1)
 {   
-    Matrix Result = {};
+    Matrix Result;
     Result.X = (element0.Y*element1.Z) - (element0.Z*element1.Y);
     Result.Y = (element0.Z*element1.X) - (element0.X*element1.Z);
     Result.Z = (element0.X*element1.Y) - (element0.Y*element1.X);
