@@ -13,7 +13,7 @@ std::istream& operator>>(std::istream& stream, std::vector<Elements<T, N>>& vec)
 {
     Elements<T, N> elements;
     float value;
-    
+
     for (int i = 0; i < N; i++)
     {
         stream >> value;
@@ -51,12 +51,12 @@ public:
     // Constant functions 
     const uint64_t N_Dimensions() const;
     const uint64_t M_Dimensions() const;
-    const std::vector<Elements<T, N>>& GetVector(uint64_t& index) const;
+    const std::vector<Elements<T, N>>& GetVector(const  uint64_t& index) const;
 
     // Read & Write (I/O) functions
 
     // NOTE: indices starts with 0.
-    T& GetValue(uint64_t i_index, uint64_t j_index);
+    T& GetValue(const uint64_t& i_index, const uint64_t& j_index);
 
     void WriteVector(); // Input function
     void ReadVectors(); // Output functions

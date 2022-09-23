@@ -25,5 +25,10 @@
 
 class Analysis
 {
+    /* TODO: 
+    1. Integrate dot product.
+    2. Integrate cross product.
+    3. Use class V and Elements.
 
+    */
 };

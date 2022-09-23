@@ -6,6 +6,7 @@
 #include <vector>
 
 #include "V.h"
+#include "V.cpp"
 #include "Elements.h"
 
 int main()
@@ -20,7 +21,7 @@ int main()
 
 
     // Input stream for the matrix to enter value from the console.
-    //Matrix.WriteVector();
+    Matrix.WriteVector();
 
     std::cout << "x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x" << std::endl;
 

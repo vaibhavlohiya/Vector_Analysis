@@ -75,12 +75,12 @@ int main()
     Matrix b_X_c = Cross_Product(element.at(1), element.at(2));
 
     // Scaler Triple Product 
-    std::cout << "Scaler Triple Product: " << Dot_Product(element.at(0), b_X_c);
+    std::cout << "Scaler Triple Product: " << Dot_Product(element.at(0), b_X_c) << std::endl;
 
     std::cout << "\n";
 
     // Vector Triple Product 
-    std::cout << "Vector Triple Product: " << Cross_Product(element.at(0), b_X_c);
+    std::cout << "Vector Triple Product: " << Cross_Product(element.at(0), b_X_c) << std::endl;
 
     std::cin.get();
 }

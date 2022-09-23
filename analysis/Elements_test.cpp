@@ -7,14 +7,18 @@ int main()
 {
     Elements<std::string, 3> E;
 
-    E.e.push_back("Hello");
-    E.e.push_back("How are ");
-    E.e.push_back("you ?");
+    E[0] = "hello";
+    E[1] = " how";
+    E[2] = " are you ?";
 
-    std::cout << E.Dimensions();
+    /*E.e.push_back("Hello");
+    E.e.push_back("How are ");
+    E.e.push_back("you ?");*/
+
+    std::cout << "Dimensions: " << E.Dimensions() << std::endl;
 
     for (int i = 0; i < 3; i++)
-        std::cout << "Elements: " << E[i];
+        std::cout << E[i];
 
     std::cin.get();
 
